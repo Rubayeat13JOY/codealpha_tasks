@@ -1,0 +1,6 @@
+{
+  "name": "Real-Time Collaboration Platform",
+  "description": "Multi-user video conferencing, real-time secure chat, collaborative whiteboard, and encrypted file sharing.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
