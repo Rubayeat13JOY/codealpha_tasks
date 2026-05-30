@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f2f4f8;
+  color: #000;
+}
+
+
+
+/* Category Section */
+.categories {
+  padding: 40px 60px;
+  overflow-x: hidden; /* ✅ Prevent right-side overflow */
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* ✅ Auto adjust grid */
+  gap: 20px;
+  justify-items: center;
+}
+
+.cat-box {
+  width: 100%; /* ✅ Take grid cell width */
+  max-width: 200px; /* Limit size */
+  height: 200px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.cat-box img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+
+.cat-box p {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cat-box{
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: .3s;
+}
+
+.cat-box:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.cat-box img{
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* ADD CATEGORY */
+.add-cat{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:50px;
+  color:red;
+}
+
+.add-cat p{
+  font-size:16px;
+  margin-top:5px;
+}
+
+/* ACTION ICONS */
+.cat-actions{
+  position:absolute;
+  top:10px;
+  right:10px;
+  display:flex;
+  gap:8px;
+}
+
+.cat-actions a{
+  font-size:16px;
+  padding:5px;
+  border-radius:5px;
+  color:#000;
+}
+
+.cat-actions a:hover{
+  background:rgba(0,0,0,0.1);
+}

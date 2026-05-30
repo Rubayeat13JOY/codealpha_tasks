@@ -1,0 +1,67 @@
+/* compare.css */
+.compare-section { padding: 40px 60px; background: #f9f9f9; }
+.compare-section h2 { margin-bottom: 30px; font-size: 28px; text-align: center; }
+
+.compare-grid { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+
+.compare-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+.compare-card:hover { transform: translateY(-5px); }
+
+.add-card { 
+    border: 2px dashed #ccc; 
+    font-size: 50px; 
+    color: #555; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+    height: 400px;
+}
+
+.add-card select { 
+    margin-top: 15px; 
+    width: 100%; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+}
+
+.compare-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; }
+.compare-card h3 { font-size: 18px; margin: 5px 0; font-weight: 600; }
+.compare-card .price { font-weight: bold; color: #1a73e8; margin: 8px 0; font-size: 16px; }
+.compare-card .stars { color: gold; margin-bottom: 10px; font-size: 16px; }
+
+.features { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 13px; }
+.features td { padding: 4px 6px; text-align: left; vertical-align: top; }
+.features td:first-child { font-weight: bold; width: 90px; }
+
+.compare-card .add-btn { 
+    padding: 10px 15px; 
+    width: 100%; 
+    border: none; 
+    background: #000000; 
+    color: #fff; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background 0.2s;
+}
+.compare-card .add-btn:hover:not(:disabled) { background: #be1212; }
+.compare-card .add-btn:disabled { background: #aaa; cursor: not-allowed; }
+
+.remove-btn { position: absolute; top: 10px; right: 12px; font-size: 18px; cursor: pointer; color: red; }

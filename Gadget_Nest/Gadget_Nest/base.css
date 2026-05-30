@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f2f4f8;
+  color: #000;
+}
+/* Header */
+header {
+  background: #111;
+  color: white;
+  padding: 20px 50px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 60px;
+}
+
+.search-bar input {
+  padding: 12px 10px;
+  width: 550px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.auth-buttons a {
+  margin-left: 50px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-buttons .login {
+  color: #fff;
+}
+
+.auth-buttons .register {
+  background: red;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* Navigation */
+nav {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 14px 50px;
+  display: block;
+  color: #000;
+  text-transform: lowercase;
+}
+
+nav ul li a:hover {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+nav ul li a.active {
+  border-bottom: 3px solid red;
+}
+footer {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center li {
+    margin: 6px 0;
+}
+
+.footer-center a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-center a:hover {
+    color: #00aaff;
+}
+
+.footer-right p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+footer b {
+    color: #00fff2;
+    font-size: 16px;
+}
+/* Header user/admin icon and logout button styling */
+.auth-buttons a img {
+    width: 40px;            /* icon size */
+    height: 40px;
+    border-radius: 50%;     /* circular icon */
+    vertical-align: middle;
+}
+
+/* Logout button styling */
+.auth-buttons a[href*="logout"] {
+    padding: 6px 12px;
+    margin-left: 30 px;
+    background: #fffefe;
+    color: #161616;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.auth-buttons a[href*="logout"]:hover {
+    background: #726a6a;
+    color: #fff;
+}
+
+/* Optional: spacing between icon and logout */
+.auth-buttons a img + a[href*="logout"] {
+    margin-left: 12px;
+}

@@ -1,0 +1,131 @@
+.offer-section {
+  padding: 40px 80px;
+  background: #f2f4f8;
+}
+
+.offer-section h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-card img {
+  width: 100%;
+  height: 300px; /* একটু বড় height */
+  object-fit: contain; /* ছবিটা container এর মধ্যে ঠিকমতো fit হবে */
+  background: #f9f9f9;
+  padding: 10px; /* সামান্য padding দিলে ছবিটা compressed দেখাবে না */
+}
+
+.offer-info {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.offer-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.offer-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.old-price {
+  color: #999;
+  position: relative;
+  display: inline-block;
+}
+
+.old-price::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1.2px;
+  background: #999;
+  transform: translateY(-50%);
+}
+
+.new-price {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.add-btn {
+  margin-top: 10px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.add-btn:hover {
+  background: red;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* 📱 Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .offer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offer-section {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,152 @@
+.bestselling-section {
+  padding: 40px 80px;
+  background: #f2f4f8;
+}
+
+.bestselling-section h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.product-list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.product-list-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Gap between image and product info */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 20px; /* add gap from image */
+}
+
+.product-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stars {
+  color: gold;
+  font-size: 14px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Add to Cart button right side */
+.add-cart-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  height: fit-content;
+  transition: background 0.3s;
+}
+
+.add-cart-btn:hover {
+  background: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .bestselling-section {
+    padding: 30px 20px;
+  }
+
+  .product-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-list-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product-info {
+    margin-left: 0;
+  }
+
+  .add-cart-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* PRODUCT PAGE LINKS FIX */
+.product-details a {
+    color: #000 !important;           /* black text */
+    text-decoration: none !important; /* remove underline */
+}
+
+/* Optional hover effect for links */
+.product-details a:hover {
+    color: #007bff !important;        /* hover blue */
+    text-decoration: underline !important;
+}
+
+/* Buttons styling already okay */
+.product-details .add-cart,
+.product-details .buy-now {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+/* Bestseller product links */
+/* Bestseller product links: force black text and no underline */
+.product-link,
+.product-link * {
+    color: #000 !important;           /* black text */
+    text-decoration: none !important; /* remove underline */
+}
+
+/* Keep price red */
+.product-link .price {
+    color: red !important;
+}
+
+/* Keep stars gold */
+.product-link .stars {
+    color: gold !important;
+}
+
+/* Hover effect */
+.product-link:hover,
+.product-link:hover * {
+    color: #111 !important;           /* slightly darker black on hover */
+    text-decoration: none !important;
+}

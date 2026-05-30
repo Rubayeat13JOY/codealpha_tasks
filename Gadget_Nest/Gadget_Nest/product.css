@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f2f4f8;
+  color: #000;
+}
+
+/* Product Layout */
+.product-details {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.product-container {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+  width: 420px;
+  border-radius: 10px;
+}
+
+.product-summary h1 { font-size: 28px; margin-bottom: 10px; }
+.brand, .model, .stock-status { font-size: 15px; margin-bottom: 6px; }
+.rating { margin: 10px 0; }
+.price { font-size: 26px; color: red; margin: 10px 0; }
+
+.key-features h3 { margin: 15px 0 8px; }
+.key-features ul li { margin-bottom: 5px; }
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.actions button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.add-cart { background: #111; color: #fff; }
+.add-cart:hover { background: #333; }
+.buy-now { background: red; color: #fff; }
+.buy-now:hover { background: #ff3d3d; }
+
+/* Specification Table */
+.spec-section {
+  background: #fff;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.spec-section h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+.spec-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.spec-section th, .spec-section td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.spec-section th {
+  width: 40%;
+  color: #333;
+}
+
+/* Description */
+.desc-section {
+  background: #fff;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.desc-section h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+
+/* Reviews */
+.reviews {
+  background: #fff;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.reviews h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+.review-card {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Related Products */
+.related-products {
+  background: #fff;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.related-products h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+.related-grid {
+  display: flex;
+  gap: 30px;
+}
+.related-item {
+  text-align: center;
+}
+.related-item img {
+  width: 160px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.related-item span {
+  color: red;
+  font-weight: 600;
+}
+
+/* ================= REVIEW FORM ================= */
+.reviews .review-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.reviews form {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.reviews form strong {
+    flex: 0 0 auto;
+    width: 150px; /* user name width fix */
+    line-height: 1.5;
+    text-align: left;
+}
+
+.reviews form .review-input {
+    flex: 1;
+    position: relative;
+     flex-direction: column; /* stars on top, textarea below */
+    align-items: flex-start; /* left-align everything */
+}
+
+/* textarea starts from left, full width minus name width */
+.reviews form textarea {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 40px 10px 10px; /* right space for send icon */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-family: inherit;
+    font-size: 14px;
+    display: block;
+
+}
+
+.reviews form button.send-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.reviews form #star-rating {
+    float: right;
+}
+
+.reviews form #star-rating .star {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+.reviews form #star-rating .star.selected {
+    color: #f5b50a;
+}

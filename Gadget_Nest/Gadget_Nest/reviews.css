@@ -1,0 +1,107 @@
+/* ===== Review Page CSS ===== */
+.review-section {
+  padding: 40px 80px;
+  background: #f2f4f8;
+}
+
+.review-section h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.review-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.review-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.review-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stars {
+  color: gold;
+  font-size: 14px;
+}
+
+.review-count {
+  color: #555;
+  font-size: 14px;
+}
+
+.add-cart-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  height: fit-content;
+  transition: background 0.3s;
+}
+
+.add-cart-btn:hover {
+  background: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .review-section {
+    padding: 30px 20px;
+  }
+
+  .review-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .review-info {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .add-cart-btn {
+    width: 100%;
+  }
+}
