@@ -1,0 +1,8 @@
+{
+  "name": "CollabBoard",
+  "description": "An interactive, full-stack Project Management and Team Collaboration Platform combining Kanban boards, documentation, real-time sync, and intelligent project insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
